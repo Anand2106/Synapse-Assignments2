@@ -1,0 +1,17 @@
+{
+	"name": "MetaTable",
+	"properties": {
+		"content": {
+			"query": "SELECT * FROM MetaTable\n\nINSERT INTO MetaTable VALUES('Source','Student.csv','dbo','newStudent')\nINSERT INTO MetaTable VALUES('Source','DeptDetails.csv','dbo','newDept')",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "TEST",
+				"poolName": "TEST"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

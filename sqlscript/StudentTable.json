@@ -1,0 +1,17 @@
+{
+	"name": "StudentTable",
+	"properties": {
+		"content": {
+			"query": "CREATE TABLE [dbo].[newStudent]\n(\nstuId VARCHAR(10),\nstuName VARCHAR(20),\nfees VARCHAR(20)\n)\nWITH\n(\n    DISTRIBUTION = HASH (stuId),\n    CLUSTERED COLUMNSTORE INDEX\n)\nGO\n\nSELECT * FROM newStudent",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "TEST",
+				"poolName": "TEST"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

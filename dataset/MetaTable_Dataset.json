@@ -1,0 +1,34 @@
+{
+	"name": "MetaTable_Dataset",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [
+			{
+				"name": "sourceFolder",
+				"type": "varchar"
+			},
+			{
+				"name": "sourceFile",
+				"type": "varchar"
+			},
+			{
+				"name": "targetschema",
+				"type": "varchar"
+			},
+			{
+				"name": "targetTable",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MetaTable"
+		},
+		"sqlPool": {
+			"referenceName": "TEST",
+			"type": "SqlPoolReference"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
