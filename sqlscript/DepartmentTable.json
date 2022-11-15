@@ -2,7 +2,7 @@
 	"name": "DepartmentTable",
 	"properties": {
 		"content": {
-			"query": "CREATE TABLE [dbo].[newDept]\n(\n    deptId VARCHAR(10),deptName VARCHAR(20)\n\n)\nWITH\n(\n    DISTRIBUTION = HASH (deptId),\n    CLUSTERED COLUMNSTORE INDEX\n)\nGO\n\nSELECT * FROM newDept",
+			"query": "CREATE TABLE [dbo].[newDept]\n(\n    deptId VARCHAR(10),\n    deptName VARCHAR(20)\n)\nWITH\n(\n    DISTRIBUTION = HASH (deptId),\n    CLUSTERED COLUMNSTORE INDEX\n)\nGO\n\nSELECT * FROM newDept",
 			"metadata": {
 				"language": "sql"
 			},
